@@ -12,10 +12,17 @@ html{
 }
 .container{
     margin: 0 auto;
-    max-width: 1280px;
+    min-width: 1280px;
 }
-h1{
-    padding-top: 36px;
+.wrapper{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.general_header{
     color:white;
     font-family: 'Exo 2', sans-serif;
     font-size: 36px;
@@ -26,7 +33,7 @@ h1{
 .cards_container{
     display:flex;
     justify-content: space-between;
-    padding-top:104px ;
+    padding-top:24px ;
 
 }
 .card{
@@ -153,6 +160,10 @@ h1{
     color: #FFFFFF;
 }
 .buy{
+    background: transparent;
+    outline: none;
+    border:none;
+    cursor: pointer;
     color: #1698D9;
     text-decoration: underline dotted ;
 }
