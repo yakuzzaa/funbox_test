@@ -34,10 +34,42 @@ h1{
 }
 .card_object{
     width: 320px;
-    height: 509px;
-    background: #F2F2F2;
-    border: 4px solid #1698D9;
-    border-radius: 12px;
-    background:linear-gradient(130deg, transparent 20px, #F2F2F2 0);
+    height: 431px;
+    background: white;
+    border-radius:  0px 0px 12px 12px;
+    border-left: 4px solid #1698D9;
+    border-right: 4px solid #1698D9;
+    border-bottom: 4px solid #1698D9;
+}
+.corner{
+    position: relative;
+    width: 43px;
+    height: 48px;
+    top:45px;
+    background: linear-gradient(-45deg,#fff,#fff 28.5px,#1698d9 0,#1698d9 32px,transparent 0);
+}
+
+
+
+.card_title{
+    position: relative;
+}
+.rectangle{
+    position: relative;
+    border-right:4px solid #1698D9;
+    border-top: 4px solid #1698D9;
+    border-radius: 0px 12px 0px 0px;
+    left: 43px ;
+    height: 41px;
+    width:281px;
+    background: white;
+}
+span{
+    font-family: 'Trebuchet MS,', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
 
 }
