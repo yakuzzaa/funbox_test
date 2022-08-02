@@ -64,12 +64,95 @@ h1{
     width:281px;
     background: white;
 }
-span{
+.text_title{
+    padding-top: 21px;
     font-family: 'Trebuchet MS,', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #666666;
+    padding-left: 3px;
+}
 
+
+.card_header{
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 43px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+}
+.card_subtext{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    padding-top: 3px;
+    padding-left: 46px;
+}
+
+.description{
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 15px;
+    padding-left: 46px;
+    color: #666666;
+}
+.cat_image{
+    margin-top:20px;
+}
+.cat_transform{
+    border-radius: 0px 0px 0px 9px;
+}
+
+.size_ellipse{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background: #1698D9;
+    margin-left: 224px;
+    margin-top:-96px;
+}
+
+.size_text{
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.small_subtext{
+    font-size: 20px;
+}
+
+.sell_text{
+    margin-top: 14px;
+    font-family: 'Trebuchet MS',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.buy{
+    color: #1698D9;
+    text-decoration: underline dotted ;
 }
