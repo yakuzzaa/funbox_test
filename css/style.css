@@ -1,77 +1,86 @@
-html{
+html {
     box-sizing: border-box;
 
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-.bg{
+
+.bg {
     background: url(../img/bg.png) center center/cover no-repeat;
     min-height: 100vh;
 }
-.container{
+
+.container {
     margin: 0 auto;
     min-width: 1280px;
 }
-.wrapper{
-    width:100vw;
-    height:100vh;
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h1.general_header{
-    color:white;
+h1.general_header {
+    color: white;
     font-family: 'Exo 2', sans-serif;
     font-size: 36px;
     line-height: 44px;
     text-shadow: 0px 1px 1px #000000;
     text-align: center;
 }
-.cards_container{
-    display:flex;
+
+.cards_container {
+    display: flex;
     justify-content: space-between;
-    padding-top:24px ;
+    padding-top: 24px;
 
 }
-.card{
+
+.card {
     position: relative;
+    cursor: pointer;
 }
-.card_object{
+
+.card_object {
     width: 320px;
     height: 431px;
     background: white;
-    border-radius:  0px 0px 12px 12px;
+    border-radius: 0px 0px 12px 12px;
     border-left: 4px solid #1698D9;
     border-right: 4px solid #1698D9;
     border-bottom: 4px solid #1698D9;
 }
-.corner{
+
+.card_title {
+    position: relative;
+}
+
+.corner {
     position: relative;
     width: 43px;
     height: 48px;
-    top:45px;
-    background: linear-gradient(-45deg,#fff,#fff 28.5px,#1698d9 0,#1698d9 32px,transparent 0);
+    top: 45px;
+    background: linear-gradient(-45deg, #fff, #fff 28.5px, #1698d9 0, #1698d9 32px, transparent 0);
 }
 
-
-
-.card_title{
+.rectangle {
     position: relative;
-}
-.rectangle{
-    position: relative;
-    border-right:4px solid #1698D9;
+    border-right: 4px solid #1698D9;
     border-top: 4px solid #1698D9;
     border-radius: 0px 12px 0px 0px;
-    left: 43px ;
+    left: 43px;
     height: 41px;
-    width:281px;
+    width: 281px;
     background: white;
 }
-.text_title{
+
+.text_title {
     padding-top: 21px;
     font-family: 'Trebuchet MS,', sans-serif;
     font-style: normal;
@@ -83,11 +92,10 @@ h1.general_header{
 }
 
 
-.card_header{
+.card_header {
     display: inline-block;
     padding-top: 5px;
     padding-left: 43px;
-
     font-family: 'Trebuchet MS', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -95,7 +103,8 @@ h1.general_header{
     line-height: 56px;
     color: #000000;
 }
-.card_subtext{
+
+.card_subtext {
     font-family: 'Trebuchet MS', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -106,8 +115,7 @@ h1.general_header{
     padding-left: 46px;
 }
 
-.description{
-
+.description {
     font-family: 'Trebuchet MS', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -117,24 +125,26 @@ h1.general_header{
     padding-left: 46px;
     color: #666666;
 }
-.cat_image{
-    margin-top:20px;
+
+.cat_image {
+    margin-top: 20px;
 }
-.cat_transform{
+
+.cat_transform {
     border-radius: 0px 0px 0px 9px;
 }
 
-.size_ellipse{
+.size_ellipse {
     position: absolute;
     height: 80px;
     width: 80px;
     border-radius: 100%;
     background: #1698D9;
     margin-left: 224px;
-    margin-top:-96px;
+    margin-top: -96px;
 }
 
-.size_text{
+.size_text {
     margin-top: 20px;
     font-family: 'Trebuchet MS', sans-serif;
     font-style: normal;
@@ -145,13 +155,14 @@ h1.general_header{
     color: #FFFFFF;
 
 }
-.small_subtext{
+
+.small_subtext {
     font-size: 20px;
 }
 
-.sell_text{
+.sell_text {
     margin-top: 14px;
-    font-family: 'Trebuchet MS',sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -159,11 +170,35 @@ h1.general_header{
     text-align: center;
     color: #FFFFFF;
 }
-.buy{
+
+.buy {
     background: transparent;
     outline: none;
-    border:none;
+    border: none;
     cursor: pointer;
     color: #1698D9;
-    text-decoration: underline dotted ;
+    text-decoration: underline dotted;
+}
+
+.selected_rectangle {
+    border-right: 4px solid #D91667;
+    border-top: 4px solid #D91667;
+}
+
+.selected_card {
+    border-left: 4px solid #D91667;
+    border-right: 4px solid #D91667;
+    border-bottom: 4px solid #D91667;
+}
+
+.selected_corner {
+    background: linear-gradient(-45deg, #fff, #fff 28.5px, #D91667 0, #D91667 32px, transparent 0);
+}
+
+.selected_ellipse {
+    background: #D91667;
+}
+
+.unavailable {
+
 }
