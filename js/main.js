@@ -56,6 +56,7 @@ function clickEvent($card,$buy) {
     const $card_ellipse = $card.querySelector('.size_ellipse')
     const $sell_text = document.getElementById(sell_text_id[$card.id])
     if (cards_clicked_state[$card.id] === CLICKED_STATUS){
+        cards_clicked_state[$card.id] = UNCLICKED_STATUS
         if (card_state[$card.id] === DEFAULT){
             card_state[$card.id] = CHANGED
             $corner.classList.add('selected_corner')
@@ -63,7 +64,6 @@ function clickEvent($card,$buy) {
             $card_object.classList.add('selected_card')
             $card_ellipse.classList.add('selected_ellipse')
             $sell_text.innerText = updated_text_for_cards[$card.id]
-            cards_clicked_state[$card.id] = UNCLICKED_STATUS
         }
         else{
             card_state[$card.id] = DEFAULT
@@ -72,15 +72,15 @@ function clickEvent($card,$buy) {
             $card_object.classList.remove('selected_card')
             $card_ellipse.classList.remove('selected_ellipse')
             if (buy_button_id[$buy.id] === "buy1"){
-                $sell_text.innerHTML = 'Чего сидишь? Порадуй котэ, <button onclick="clickEvent($card1,$buy1)" class="buy" id = "buy1">купи</button>.'
+                $sell_text.innerHTML = 'Чего сидишь? Порадуй котэ, <button onmouseleave="clickEvent($card1,$buy1)" onclick="clickedChecker($card1)" class="buy" id = "buy1">купи</button>.'
                 console.log("work1")
             }
             if (buy_button_id[$buy.id] === "buy2"){
-                $sell_text.innerHTML = 'Чего сидишь? Порадуй котэ, <button onclick="clickEvent($card2,$buy2)" class="buy" id = "buy2">купи</button>.'
+                $sell_text.innerHTML = 'Чего сидишь? Порадуй котэ, <button onmouseleave="clickEvent($card2,$buy2)" onclick="clickedChecker($card2)" class="buy" id = "buy2">купи</button>.'
                 console.log("work2")
             }
             if (buy_button_id[$buy.id] === "buy3"){
-                $sell_text.innerHTML = 'Чего сидишь? Порадуй котэ, <button onclick="clickEvent($card3,$buy3)" class="buy" id = "buy3">купи</button>.'
+                $sell_text.innerHTML = 'Чего сидишь? Порадуй котэ, <button onmouseleave="clickEvent($card3,$buy3)" onclick="clickedChecker($card3)" class="buy" id = "buy3">купи</button>.'
                 console.log("work3")
             }
 
@@ -92,25 +92,8 @@ function clickEvent($card,$buy) {
 
 
 
-$card1.addEventListener("click", function (e) {
-    clickedChecker($card1)
-})
-$card2.addEventListener("click", function (e) {
-    clickedChecker($card2)
-})
-$card3.addEventListener("click", function (e) {
-    clickedChecker($card3)
-})
 
-$buy1.addEventListener("click", function (e){
-    clickedChecker($card1)
-})
-$buy2.addEventListener("click", function (e){
-    clickedChecker($card2)
-})
-$buy3.addEventListener("click", function (e){
-    clickedChecker($card3)
-})
+
 
 
 
