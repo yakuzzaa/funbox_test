@@ -161,6 +161,7 @@ h1.general_header {
 }
 
 .sell_text {
+    cursor: default;
     margin-top: 14px;
     font-family: 'Trebuchet MS', sans-serif;
     font-style: normal;
